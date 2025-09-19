@@ -204,13 +204,12 @@ int main(){
 		goto MAIN_FAIL;
 	}
 
-	u8 bank_count = SpiRamInit();
+	u8 bank_count = SpiRamInitGetSize();
 
 	if(!bank_count){
 		UMPrint(3,cony++,PSTR("ERROR: No SPI RAM detected"));
 		goto MAIN_FAIL;
 	}else{
-		bank_count = 2;//BANK HACK
 		detected_ram = (u32)(bank_count*(64UL*1024UL));
 		u8 moff = 21;		//>=65536
 		if(bank_count > 1)	//>=131072
@@ -1904,4 +1903,5 @@ static inline void sweep_tick_one(u8 ch){
 static void clock_sweep_units(){
 	sweep_tick_one(0);
 	sweep_tick_one(1);
+
 }
