@@ -16,7 +16,7 @@ A lightweight 2A03/NES APU player for **Uzebox**, capable of streaming **.VGM** 
 
 ## Requirements
 
-- **Uzebox** console with **128 KiB SPI RAM**.
+- **Uzebox** console with **128 KiB SPI RAM** minimum (supports up to 8MB).
 - SD card (FAT) readable via Petit FatFs.
 - AVR‑GCC toolchain compatible with Uzebox builds.
 
