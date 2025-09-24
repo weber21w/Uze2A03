@@ -12,7 +12,6 @@ A lightweight 2A03/NES APU player for **Uzebox**, capable of streaming **.VGM** 
 - Real‑time VGM stream parser (44.1 kHz wait conversion → 15.72 kHz mix).
 - **Dual SPI‑RAM caches** (separate VGM/DMC) to minimize SD/PSRAM seeks.
 - File browser UI, pause/play/FF, on‑screen timer, skin color cycling.
-- 8‑bit centered output in Uzebox mix buffer (`0x80` = silence).
 
 ## Requirements
 
