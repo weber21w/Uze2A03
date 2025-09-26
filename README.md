@@ -2,6 +2,8 @@
 
 A lightweight 2A03/NES APU player for **Uzebox**, capable of streaming **.VGM** files directly from SD while mixing audio in real time. DMC sample playback is supported with a dedicated cache to keep SPI seeks low.
 
+See discussion on the [Uzebox forums](https://uzebox.org/forums/viewtopic.php?t=11501)
+
 > **Status:** Working VGM player. **VGZ (gzip) is not yet implemented** (planned).
 
 ---
